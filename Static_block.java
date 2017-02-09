@@ -1,4 +1,4 @@
-package mypackage;
+
 
 public class Static_block  extends Child{
    int flag;
