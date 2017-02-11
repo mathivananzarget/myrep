@@ -1,48 +1,42 @@
-package library_system;
-import java.util.*;
-public class Student implements library{
+package library_pro;
+
+public class Student {
 	public String stu_name;
-	public int regno;
+	private int stu_id;
 	public static int nos;
 	public String pwd;
 	public int bid=0;
-	public boolean session;
-	
-	public Student(int regno,String name,String pwd)
+	public boolean status=true;
+	public String last_book=null,cur_book=null;
+	public String getStudentname()
+	{
+		return this.stu_name;
+	}
+	public int getStu_id()
+	{
+		return this.stu_id;
+	}
+	public Student(String snam,String pwd)
 	{
 		nos++;
-		this.regno=regno;
-		this.stu_name=name;
+		this.stu_name=snam;
 		this.pwd=pwd;
-	
-		
-		
+		this.stu_id=nos;
 	}
-   public boolean verification(int reg,String pwd)
-   {
-	   if(this.regno==reg && this.pwd.equals(pwd))
-	   {
-		   return true;
-	   }
-	   return false;
-   }
-   public Book isavailable(int bid,ArrayList book)
-   {
-	   Book b;
-	   for(int i=0;i<book.size();i++)
-	   {
-		   b=(Book)book.get(i);
-		   if(b.bookid==bid)
-		   {
-			   if(b.status)
-			   {
-				  return b;
-			   }
-		   }
-	   }
-	   return null;
-	   
-   }
-   
-
+	public boolean getStatus()
+	{
+	return this.status;
+	}
+	public  static int  no_of_stud()
+	{
+		return nos;
+	}
+	public String lastTake(int sid)
+	{
+		return this.last_book;
+	}
+	public String curTake(int sid)
+	{
+		return this.cur_book;
+	}
 }
