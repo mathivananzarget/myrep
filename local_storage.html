@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+
+<script>
+function getValue(){
+if (typeof(Storage) !== "undefined") {
+  
+    localStorage.setItem("name", "mathi");
+    localStorage.setItem("email", "mathivanansoft@gmail.com");
+    localStorage.setItem("age","22");
+    localStorage.setItem("gender","male");
+    var str="";
+    for(var i=0;i<localStorage.length;i++)
+    {
+    str+=localStorage.key(i)+" : "+localStorage.getItem(localStorage.key(i))+"<br>";
+    }
+    
+    document.getElementById("result").innerHTML =str+ localStorage.getItem("name");
+} 
+}
+</script>
+<button type="button"  onclick="getValue()">click </button>
+
+</body>
+</html>
