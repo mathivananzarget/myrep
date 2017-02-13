@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link  href="/Users/mathivanansubramani/Desktop/bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="/Users/mathivanansubramani/Desktop/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="../js/stu_reg.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" >Zarget Registration</a></li>
+  <li><a data-toggle="tab"  >Start Free Trial</a></li>
+  <li><a data-toggle="tab"   >Login</a></li>
+<li ><a data-toggle="tab"   >Resources</a></li>
+</ul></div>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    
+  </div></div>
+  
+  
+  
+<div class="container">
+<h3>Zarget Registration</h3>
+
+<form  action="" method="post" class="form-horizontal" role="form" >
+ <label for="name">Name</label>
+ <div class="form-group">
+ 
+   <div class="col-sm-3">
+    <input type="text" name="name" id="name" required  class="form-control" />
+<span id="inname" style="color:#FF0000"></span>
+   </div>
+   </div>
+<div class="form-group">
+<div class="col-sm-3">
+  <label for="reg">  Zargetid</label>
+	<input  type="text" name="regno"  maxlength=7 id="reg" class="form-control" maxlength="7"/><span id="inreg" style="color:#FF0000"></span>
+</div>
+</div>
+<label for="email">
+    E-Mail</label>
+<div class="form-group">
+ 
+   <div class="col-sm-3">
+  <input  type="email" id="email" name="mailid"  class="form-control" required/>
+</div>
+</div>
+<label for="gender">
+    Gender</label>
+<div class="form-group">
+ 
+   <div class="col-sm-3">
+	<input type="radio" name="gender" id="gender" value="male" class="radio-inline" required/>Male<input type="radio" name="gender"  class="radio-inline" value="female"/>Female
+</div>
+</div>
+<label for="dob">
+D.O.B</label>
+<div class="form-group">
+ 
+   <div class="col-sm-3">
+<input type="date" id="dob" name="dob" max="2000-12-31" min="1990-01-01"  class="form-control" required/>
+</div></div>
+<label for="mob">
+Mobile Number
+</label>
+<div class="form-group">
+ 
+   <div class="col-sm-3">
+<input type="text" name="mobile" id="mob" required  maxlength="10" class="form-control"/>
+
+
+<span id="inmob" style="color:#FF0000"></span>
+</div>
+</div>
+
+<label for="community">
+    Community</label>
+<div class="form-group">
+ 
+   <div class="col-sm-3">
+	<select name="community" id="community" class="form-control">
+	<option value="OC">OC</option>
+	<option value="BC">BC</option>
+	<option value="MBC">MBC</option>
+	<option value="SC">SC</option>
+	<option value="ST">ST</option>
+	</select>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-3">
+  <label for="add">Address for Communication</label>
+	<textarea  rows="4" name="address"  id = "add" class="form-control"/ required></textarea><span style="color:#FF0000"></span>
+</div></div>
+<label for="degree">
+   Degree</label>
+<div class="form-group">
+ 
+   <div class="col-sm-3">
+   <select name="degree" required class="form-control" id="degree">
+  
+   <option value="U.G">Under Graduate</option>
+    <option value="P.G">Post Graduate</option>
+   <option value="P.hd">Doctor of philosophy</option>
+
+</select>
+</div></div>
+
+<label for="branch"> Stream
+	 </label>
+	<div class="form-group">
+ 
+   <div class="col-sm-3">
+	<input type="text" name="branch" id="branch"  class="form-control" required />  
+	</div>
+</div>
+<label for="yoj"> Year of Joining
+	 </label>
+	<div class="form-group">
+ 
+   <div class="col-sm-3">
+	<input type="text" name="yoj" id="yoj" class="form-control" />  
+	</div>
+</div>
+<label for="yoj"> Years of Experience
+   </label>
+  <div class="form-group">
+ 
+   <div class="col-sm-3">
+  <input type="text" name="yoj" id="yoj" class="form-control"  />  
+  </div>
+</div>
+
+<input type="submit" name="submit" value="SUBMIT" id="subid" class="btn btn-primary" />
+<input  type="reset" name="cancel" value="RESET"  class="btn btn-danger" />
+
+
+
+</form>
+
+
+
+</div>
+</body>
+</html>
